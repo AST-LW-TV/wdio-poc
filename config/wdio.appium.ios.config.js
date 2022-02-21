@@ -1,26 +1,11 @@
+const commonConfig = require("./wdio.common.config").config;
+
 exports.config = {
     runner: "local",
     host: "localhost",
     port: "4723",
-    logLevel: "info",
-    framework: "mocha",
-    mochaOpts: {
-        ui: "bdd",
-        require: ["@babel/register"],
-        timeout: 60000,
-    },
     maxInstance: 1,
-    sync: true,
-    specs: ["test/sample.js"],
-    services: [
-        [
-            "appium",
-            {
-                args: {},
-                command: "appium",
-            },
-        ],
-    ],
+    specs: [],
     capabilities: [
         {
             // platformName: "Android",
@@ -31,4 +16,5 @@ exports.config = {
             // path: "/wd/hub",
         },
     ],
+    ...commonConfig,
 };
