@@ -1,0 +1,27 @@
+{
+  "name": "wdio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-android": "wdio run ./config/wdio.appium.android.config.js",
+    "test-ios":"wdio run ./config/wdio.appium.ios.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/appium-service": "^7.16.14",
+    "@wdio/cli": "^7.16.15",
+    "@wdio/local-runner": "^7.16.15",
+    "@wdio/mocha-framework": "^7.16.15",
+    "@wdio/sync": "^7.16.15",
+    "webdriverio": "^7.16.15"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.3",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.0"
+  }
+}
