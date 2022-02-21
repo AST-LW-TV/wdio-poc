@@ -23,12 +23,13 @@ exports.config = {
     ],
     capabilities: [
         {
-            // platformName: "Android",
-            // automationName: "UiAutomator2",
-            // deviceName: "Pixel_3A",
-            // udid: "emulator-5554",
-            // app: `${process.cwd()}/app/Decathlon_3_22_4_92.apk`,
-            // path: "/wd/hub",
+            platformName: "iOS",
+            automationName: "XCUITest",
+            deviceName: "Bharath’s iPhone",
+            udid: "97c571c265ef2938c076b87d4fb358be906d0919",
+            app: `${process.cwd()}/app/Decathlon_3_1_33.ipa`,
+            path: "/wd/hub",
+            useNewWDA: false
         },
     ],
 };
